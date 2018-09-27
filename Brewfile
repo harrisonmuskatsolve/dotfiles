@@ -1,33 +1,23 @@
-cask_args appdir: '/Applications'
-
-tap 'homebrew/bundle'
-
-brew 'ack'
-brew 'coreutils'
-brew 'go'
-brew 'grc'
-brew 'imagemagick'
-brew 'jp2a'
-brew 'jq'
-brew 'libcaca', args: ['with-imlib2']
-brew 'libgit2'
-brew 'openssl'
-brew 'node'
-brew 'readline'
-brew 'postgresql'
-brew 'ruby-build'
-brew 'rbenv'
-brew 'roundup'
-brew 'spaceman-diff'
-brew 'spark'
-brew 'unrar'
-brew 'wget'
-brew 'yarn'
-brew 'youtube-dl'
-
-cask '1password'
-cask 'firefox'
-cask 'garmin-express'
-cask 'google-chrome'
-cask 'seashore'
-cask 'slack'
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+brew "composer"
+brew "dnsmasq", restart_service: true
+brew "mysql", restart_service: true
+brew "nginx", restart_service: true
+brew "node"
+brew "nodenv"
+brew "php", restart_service: true
+brew "phpunit"
+brew "zsh"
+brew "openssl"
+brew "jq"
+cask "1password"
+cask "firefox"
+cask "garmin-express"
+cask "google-chrome"
+cask "docker"
+cask "slack"
+cask "spotify"
